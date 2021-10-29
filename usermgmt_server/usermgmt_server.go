@@ -105,7 +105,7 @@ func (server *UserManagementServer) GetUsers(ctx context.Context, in *pb.GetUser
 }
 
 func main() {
-	database_url := "postgres://postgres:mysecretpassword@localhost:5432/postgres"
+	database_url := "postgres://postgres:1234@localhost:5432/postgres"
 	conn, err := pgx.Connect(context.Background(), database_url)
 	if err != nil {
 		log.Fatalf("unable to establish connection: %v", err)
